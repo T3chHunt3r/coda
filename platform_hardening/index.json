@@ -7,7 +7,8 @@
         "steps" : [
             {
             "title" : "Hardened Servers",
-            "text" : "hardened_servers.md"
+            "text" : "hardened_servers.md",
+            "courseData" : "hardened_servers_bg.sh"
             },
             {
             "title" : "Ensuring updated software",
