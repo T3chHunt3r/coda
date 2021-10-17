@@ -1,1 +1,1 @@
-
+Database security is the collective measures taken to protect and secure a database from illegitimate use and malicious threats and attacks. These steps are aimed at protecting both the data, as well as the chosen management system and all applications within the platform, which the database resides in. Though this term has a wide range of tools, methodologies and processes, we will attempt to explore the most vital parts of Database Security.
