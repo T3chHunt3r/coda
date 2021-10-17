@@ -11,16 +11,16 @@
             "courseData" : "hardened_servers_bg.sh"
             },
             {
-            "title" : "Ensuring updated software",
-            "text" : "software_updates.md"
+            "title" : "Data Access Control",
+            "text" : "access_control.md"
             },
             {
-            "title" : "Anti-virus software",
-            "text" : "antivirus.md"
+            "title" : "Database Encryption Key Management",
+            "text" : "db_encryption.md"
             },
             {
-            "title" : "Ensure logging is enabled",
-            "text" : "logging.md"
+            "title" : "Backup & Data Recovery",
+            "text" : "backup.md"
             }
         ],
         "intro" : {
