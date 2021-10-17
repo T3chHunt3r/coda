@@ -1,6 +1,6 @@
 {
-    "title": "Platform Hardening & Software Patch Management",
-    "description" : "Ensuring that the environment is secured",
+    "title": "Database Security",
+    "description" : "Ensuring that the database and its environment are secured.",
     "difficulty" : "Beginner",
     "time" : "10",
     "details" : {
