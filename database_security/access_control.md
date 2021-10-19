@@ -4,7 +4,7 @@ Ensuring correct user role management and appropriate access controls set in the
 <br/>
 For this next pratical, we will go through with installing mysql-server and creating and manipulating users access roles. We will use a sample database wchich contains data that a typical business would have, such as customers, products, sales-orders and etc.
 
-1. Before installing mysql, if you did not already create a `master` account, we will first review what we have learned from the previous section, first we need to create a Superuser account to access our mysql database. It is generally good practice to use non-root accounts when using a linux machine. So lets again create a Superuser with `useradd -g sudo -ms /bin/bash master && passwd master`.
+1. Before installing mysql, if you did not already create a `master` account, we will first review what we have learned from the previous section, first we need to create a Superuser account to access our mysql database. It is generally good practice to use non-root accounts when using a linux machine. So lets again create a Superuser with `useradd -g sudo -ms /bin/bash master && passwd master`. There is no need to do this step if you already have a master account from the previous section.
 <br/>
 Before we can login to the newly created account, we should set a password for the root account, so do that with `passwd root`. After setting both master account's password and root's password, we can login to the master account with `login master`.
 
@@ -24,6 +24,7 @@ Before we can login to the newly created account, we should set a password for t
 
 There are many other considerations to think about when securing a Database. We have only gone through part of many steps to mitigate any security incidents. Other steps that can be taken, but not limited to are;
 
+- Enable logging in database
 - Limit/Disable SHOW DATABASES
 - Disable LOD DATA LOCAL INFILE command
 - Obfuscate root account
