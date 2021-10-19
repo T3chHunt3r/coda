@@ -1,8 +1,8 @@
 {
     "title": "Database Security",
     "description" : "Ensuring that the database and its environment are secured.",
-    "difficulty" : "Beginner",
-    "time" : "10",
+    "difficulty" : "Novice",
+    "time" : "20",
     "details" : {
         "steps" : [
             {
