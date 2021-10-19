@@ -45,7 +45,7 @@ Following PCI-DSS, databases containing important Credit Card information must b
 
 In this example, we will walk through with encrypting individual columns in the sample database. Note that this is just an overview of what functions are available in the Community Edition, specific encryption solutions and policies will depend on the company use case.
 
-1. In this example, we will encrypt the 'customerName' column in the 'customers' table for the 'classicmodels' database. So let's navigate to that database with the query `USE classicmodels` and show 10 rows of the customers table, focusing on the customerName only with `SELECT customerName FROM customers LIMIT 10;`.
+1. In this example, we will encrypt the 'customerName' column in the 'customers' table for the 'classicmodels' database. So let's navigate to that database with the query `USE classicmodels;` and show 10 rows of the customers table, focusing on the customerName only with `SELECT customerName FROM customers LIMIT 10;`.
 
 2. What we will do is first create a new column to store the encrypted versions of the customerName values, we can do this with `ALTER TABLE customers ADD encCustomerName blob;`. This statement creates a new table with the 'blob' data type, to store our binary encrypted values.
 
