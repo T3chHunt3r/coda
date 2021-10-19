@@ -7,8 +7,7 @@
         "steps" : [
             {
             "title" : "Hardened Servers",
-            "text" : "hardened_servers.md",
-            "courseData" : "hardened_servers_bg.sh"
+            "text" : "hardened_servers.md"
             },
             {
             "title" : "Data Access Control",
