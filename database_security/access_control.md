@@ -16,7 +16,7 @@ Before we can login to the newly created account, we should set a password for t
 
 5. Now we will creates roles in order to properly set out allowed actions to staffone, since this user is a floor staff, they can only have access to two tables, first create a role `CREATE ROLE 'floorstaff';` and then set permissions with `GRANT SELECT ON classicmodels.products TO 'floorstaff'; GRANT SELECT ON classicmodels.productline TO 'floorstaff';`. These two queries sets what the role "floorstaff" can do, in this case, they only have SELECT queries on two tables. Then `GRANT 'floorstaff' TO 'staffone'@'localhost';` which adds the staffone user to the floorstaff role. You can use the previous SHOW GRANT query to see the roles assigned to staffone, but this query will allow you to see which permissions specifically are given within that role `SHOW GRANTS FOR 'staffone'@'localhost' USING 'floorstaff';`
 
-6. In order to speicify which roles should be active each time a user connects to the database, we need to use `SET DEFAULT ROLE ALL TO 'staff'@'localhost';`. Finally, we need to use the query `FLUSH PRIVILEGES;` to ensure that privileges are updated.
+6. In order to speicify which roles should be active each time a user connects to the database, we need to use `SET DEFAULT ROLE ALL TO 'staffone'@'localhost';`. Finally, we need to use the query `FLUSH PRIVILEGES;` to ensure that privileges are updated.
 
 7. Try logging into the staffone user with `sudo mysql -u staffone -p`. Then confirm that staffone does have select usage on the two presribed tables.
 
